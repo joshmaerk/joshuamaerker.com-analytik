@@ -18,8 +18,8 @@ services:
     links:
       - db
     volumes:
-#      - ./config:/var/www/html/config:rw
-#      - ./logs:/var/www/html/logs
+      - ./config:/var/www/html/config:rw
+      - ./logs:/var/www/html/logs
       - matomo:/var/www/html
     environment:
       - MATOMO_DATABASE_HOST=db
